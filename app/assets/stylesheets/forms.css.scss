@@ -1,0 +1,14 @@
+input[type="text"],input[type="email"], textarea{
+	width: 100%;
+	padding: 7px 5px;
+}
+
+label.required{
+	font-weight: bold;
+	text-decoration: none;
+	border-bottom: 1px dotted #333;
+	font-size: 1.2em;
+	&:after{
+		content: "*";
+	}
+}

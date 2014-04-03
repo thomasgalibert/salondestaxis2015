@@ -1,0 +1,37 @@
+<div id="slide1">
+
+	<div id="nav">
+		<div id="title-logo">
+			<%= link_to image_tag("logo.png"), root_path %>
+		</div>
+    <ul id="links">
+      <li><%= link_to "Contenu du salon", '#domaines' %></li>
+      <li><%= link_to "Exposer", '#publications' %></li>
+      <li><%= link_to "Venir au salon", '#contact' %></li>
+      <li><%= link_to "Médias & Presse", '#contact' %></li>
+    </ul>
+  </div>
+
+	<div class="jumbotron">
+	  <h1>Salon des Taxis <br>
+	  		31 janvier et 1er février 2015
+	  </h1>
+	  <p>Même les américains s'y pressent ! Vous aussi, ne manquez pas la 12ème édition du plus grand salon des professionnels du taxi en France !</p>
+	  <p><a class="btn btn-danger btn-lg" role="button" data-toggle="modal" data-target="#myModal">Chauffeurs de taxis, inscrivez-vous gratuitement!</a></p>
+	</div>	
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Inscription au Salon des Taxis 2015</h4>
+      </div>
+      <div class="modal-body">
+        <%= render '/inscriptions/form' %>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @inscription.name %>
+</p>
+
+<p>
+  <strong>Firstname:</strong>
+  <%= @inscription.firstname %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @inscription.email %>
+</p>
+
+<p>
+  <strong>Profession:</strong>
+  <%= @inscription.profession %>
+</p>
+
+<p>
+  <strong>Street:</strong>
+  <%= @inscription.street %>
+</p>
+
+<p>
+  <strong>Zipcode:</strong>
+  <%= @inscription.zipcode %>
+</p>
+
+<p>
+  <strong>Town:</strong>
+  <%= @inscription.town %>
+</p>
+
+<%= link_to 'Edit', edit_inscription_path(@inscription) %> |
+<%= link_to 'Back', inscriptions_path %>

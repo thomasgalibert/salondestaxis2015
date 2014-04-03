@@ -1,0 +1,39 @@
+<h1>Listing inscriptions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Firstname</th>
+      <th>Email</th>
+      <th>Profession</th>
+      <th>Street</th>
+      <th>Zipcode</th>
+      <th>Town</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @inscriptions.each do |inscription| %>
+      <tr>
+        <td><%= inscription.name %></td>
+        <td><%= inscription.firstname %></td>
+        <td><%= inscription.email %></td>
+        <td><%= inscription.profession %></td>
+        <td><%= inscription.street %></td>
+        <td><%= inscription.zipcode %></td>
+        <td><%= inscription.town %></td>
+        <td><%= link_to 'Show', inscription %></td>
+        <td><%= link_to 'Edit', edit_inscription_path(inscription) %></td>
+        <td><%= link_to 'Destroy', inscription, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Inscription', new_inscription_path %>

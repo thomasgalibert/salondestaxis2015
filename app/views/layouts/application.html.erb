@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Taxi2</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <script type="text/javascript" src="//use.typekit.net/qyt5oej.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+
+
+	<%= render "/welcome/slide1" %>
+  <%= render "/welcome/slide2" %>
+  <%= render "/welcome/slide3" %>
+  <%= render "/welcome/slide4" %>
+
+  <%= render "/layouts/footer" %>
+	
+	<%= yield %>	
+
+
+
+</body>
+</html>

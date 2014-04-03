@@ -1,0 +1,35 @@
+<%= form_for @inscription, html: {role: "form", class: ""} do |f| %>
+
+  <div class="form-group">
+    <%= f.label :name, "Nom", class: "required" %><br>
+    <%= f.text_field :name, placeholder: "MARTIN", required: true %>
+  </div>
+  <div class="form-group">
+    <%= f.label :firstname, "Prénom", class: "required" %><br>
+    <%= f.text_field :firstname, placeholder: "Nicolas", required: true %>
+  </div>
+  <div class="form-group">
+    <%= f.label :email, "Email", class: "required" %><br>
+    <%= f.email_field :email, placeholder: "nicolas.martin@hotmail.fr", required: true %>
+  </div>
+  <div class="form-group">
+    <%= f.label :profession, "Situation", class: "required" %><br>
+    <%= f.select :profession, ["Artisan","Locataire","Salarié","Autre Situation","en formation","Autre profession"], prompt: "-- sélectionner voter situation --", required: true %>
+  </div>
+  <div class="form-group">
+    <%= f.label :street, "Adresse" %><br>
+    <%= f.text_area :street, placeholder: "18 rue du printemps" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :zipcode, "Code postal" %><br>
+    <%= f.text_field :zipcode, placeholder: "75001" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :town, "Ville" %><br>
+    <%= f.text_field :town, placeholder: "Paris" %>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+    <%= f.submit "Envoyer l'inscription", class: "btn btn-success", disabled: true %>
+  </div>
+<% end %>
