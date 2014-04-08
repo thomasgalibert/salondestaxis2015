@@ -1,0 +1,292 @@
+@charset "UTF-8";
+@import url(bootstrap.css);
+@import url(font-awesome.css);
+/* line 1, /Users/thomasgalibert/Projects/taxi2/app/assets/stylesheets/types.css.scss */
+body {
+  font-family: "freight-micro-pro";
+}
+
+/* Mise en place des diffÃ©rentes parties / slides */
+/* line 2, /Users/thomasgalibert/Projects/taxi2/app/assets/stylesheets/backgrounds.css.scss */
+#slide1, #slide2, #slide3, #slide4 {
+  width: 100%;
+}
+
+/* line 7, /Users/thomasgalibert/Projects/taxi2/app/assets/stylesheets/backgrounds.css.scss */
+#slide1 {
+  background: url(/assets/back4.jpg) center 0 no-repeat fixed;
+  height: 1000px;
+}
+
+/* line 12, /Users/thomasgalibert/Projects/taxi2/app/assets/stylesheets/backgrounds.css.scss */
+#slide2 {
+  background: #f5efe6;
+  height: 1000px;
+}
+
+/* line 17, /Users/thomasgalibert/Projects/taxi2/app/assets/stylesheets/backgrounds.css.scss */
+#slide3 {
+  background: #f5efe6;
+  padding-bottom: 50px;
+}
+
+/* line 22, /Users/thomasgalibert/Projects/taxi2/app/assets/stylesheets/backgrounds.css.scss */
+#slide4 {
+  background: #f5efe6;
+  padding-bottom: 50px;
+}
+
+/* line 27, /Users/thomasgalibert/Projects/taxi2/app/assets/stylesheets/backgrounds.css.scss */
+footer {
+  background: #f5efe6;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+}
+
+/* line 33, /Users/thomasgalibert/Projects/taxi2/app/assets/stylesheets/backgrounds.css.scss */
+.checkerboard {
+  height: 60px;
+  border-bottom: 2px solid #000;
+  border-top: 2px solid #000;
+  background-color: #f5efe6;
+  background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black);
+  background-size: 60px 60px;
+  background-position: 0 0, 30px 30px;
+}
+
+/* line 1, /Users/thomasgalibert/Projects/taxi2/app/assets/stylesheets/styles.css.scss */
+.jumbotron {
+  width: 80%;
+  height: 350px;
+  background: transparent;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+/* line 12, /Users/thomasgalibert/Projects/taxi2/app/assets/stylesheets/styles.css.scss */
+.jumbotron h1 {
+  color: #ffd500;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+/* line 20, /Users/thomasgalibert/Projects/taxi2/app/assets/stylesheets/styles.css.scss */
+.jumbotron p {
+  font-size: 2em;
+  color: #fff;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+/* line 28, /Users/thomasgalibert/Projects/taxi2/app/assets/stylesheets/styles.css.scss */
+.jumbotron p a {
+  text-shadow: none;
+}
+
+/* line 34, /Users/thomasgalibert/Projects/taxi2/app/assets/stylesheets/styles.css.scss */
+h4 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* line 39, /Users/thomasgalibert/Projects/taxi2/app/assets/stylesheets/styles.css.scss */
+li {
+  margin-bottom: 10px;
+}
+
+/* line 43, /Users/thomasgalibert/Projects/taxi2/app/assets/stylesheets/styles.css.scss */
+hr {
+  border: 1px solid #BDBDBD;
+}
+
+/* line 47, /Users/thomasgalibert/Projects/taxi2/app/assets/stylesheets/styles.css.scss */
+#nav {
+  margin-bottom: 50px;
+  background-color: rgba(1, 1, 1, 0.8);
+  text-align: right;
+  border-bottom: 3px solid #000;
+  position: relative;
+}
+/* line 53, /Users/thomasgalibert/Projects/taxi2/app/assets/stylesheets/styles.css.scss */
+#nav #title-logo {
+  position: absolute;
+  left: 10px;
+  top: 0px;
+}
+/* line 58, /Users/thomasgalibert/Projects/taxi2/app/assets/stylesheets/styles.css.scss */
+#nav #links {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+/* line 62, /Users/thomasgalibert/Projects/taxi2/app/assets/stylesheets/styles.css.scss */
+#nav #links li {
+  padding: 0;
+  margin: 0;
+  display: inline;
+  margin-right: 30px;
+}
+/* line 67, /Users/thomasgalibert/Projects/taxi2/app/assets/stylesheets/styles.css.scss */
+#nav #links li a, #nav #links li a:visited {
+  text-decoration: none;
+  font-size: 1.5em;
+  color: #fff;
+  line-height: 2.5em;
+}
+
+/* line 80, /Users/thomasgalibert/Projects/taxi2/app/assets/stylesheets/styles.css.scss */
+#nav-secondary {
+  clear: both;
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: rgba(1, 1, 1, 0.8);
+  text-align: right;
+}
+/* line 91, /Users/thomasgalibert/Projects/taxi2/app/assets/stylesheets/styles.css.scss */
+#nav-secondary #title-logo {
+  position: absolute;
+  left: 10px;
+  top: 0px;
+}
+/* line 96, /Users/thomasgalibert/Projects/taxi2/app/assets/stylesheets/styles.css.scss */
+#nav-secondary #links {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+/* line 100, /Users/thomasgalibert/Projects/taxi2/app/assets/stylesheets/styles.css.scss */
+#nav-secondary #links li {
+  padding: 0;
+  margin: 0;
+  display: inline;
+  margin-right: 30px;
+}
+/* line 105, /Users/thomasgalibert/Projects/taxi2/app/assets/stylesheets/styles.css.scss */
+#nav-secondary #links li a, #nav-secondary #links li a:visited {
+  text-decoration: none;
+  font-size: 1.5em;
+  color: #fff;
+  line-height: 2.5em;
+}
+
+/* line 118, /Users/thomasgalibert/Projects/taxi2/app/assets/stylesheets/styles.css.scss */
+#services {
+  text-align: center;
+  position: relative;
+}
+/* line 121, /Users/thomasgalibert/Projects/taxi2/app/assets/stylesheets/styles.css.scss */
+#services #service-map {
+  position: relative;
+  height: 800px;
+  width: 800px;
+  margin: 0 auto;
+}
+/* line 126, /Users/thomasgalibert/Projects/taxi2/app/assets/stylesheets/styles.css.scss */
+#services #service-map #legend-car {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 150px;
+  left: -180px;
+  font-size: 1.2em;
+}
+/* line 133, /Users/thomasgalibert/Projects/taxi2/app/assets/stylesheets/styles.css.scss */
+#services #service-map #legend-car p {
+  text-align: left;
+}
+/* line 137, /Users/thomasgalibert/Projects/taxi2/app/assets/stylesheets/styles.css.scss */
+#services #service-map #legend-luminere {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 20px;
+  right: 40px;
+  font-size: 1.2em;
+}
+/* line 144, /Users/thomasgalibert/Projects/taxi2/app/assets/stylesheets/styles.css.scss */
+#services #service-map #legend-luminere p {
+  text-align: left;
+}
+/* line 148, /Users/thomasgalibert/Projects/taxi2/app/assets/stylesheets/styles.css.scss */
+#services #service-map #legend-smartphone {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  bottom: 130px;
+  right: -220px;
+  font-size: 1.2em;
+}
+/* line 155, /Users/thomasgalibert/Projects/taxi2/app/assets/stylesheets/styles.css.scss */
+#services #service-map #legend-smartphone p {
+  text-align: left;
+}
+/* line 159, /Users/thomasgalibert/Projects/taxi2/app/assets/stylesheets/styles.css.scss */
+#services #service-map #legend-meeting {
+  position: absolute;
+  width: 300px;
+  height: 150px;
+  top: 20px;
+  left: -60px;
+  font-size: 1.2em;
+}
+/* line 166, /Users/thomasgalibert/Projects/taxi2/app/assets/stylesheets/styles.css.scss */
+#services #service-map #legend-meeting p {
+  text-align: left;
+}
+/* line 170, /Users/thomasgalibert/Projects/taxi2/app/assets/stylesheets/styles.css.scss */
+#services #service-map #legend-financial {
+  position: absolute;
+  width: 300px;
+  height: 150px;
+  bottom: -130px;
+  left: 270px;
+  font-size: 1.2em;
+}
+/* line 177, /Users/thomasgalibert/Projects/taxi2/app/assets/stylesheets/styles.css.scss */
+#services #service-map #legend-financial p {
+  text-align: left;
+}
+
+/* line 184, /Users/thomasgalibert/Projects/taxi2/app/assets/stylesheets/styles.css.scss */
+#panel-exposer {
+  padding-top: 25px;
+}
+/* line 186, /Users/thomasgalibert/Projects/taxi2/app/assets/stylesheets/styles.css.scss */
+#panel-exposer h1, #panel-exposer h2, #panel-exposer h3 {
+  text-align: center;
+}
+/* line 189, /Users/thomasgalibert/Projects/taxi2/app/assets/stylesheets/styles.css.scss */
+#panel-exposer h2 {
+  font-size: 1.7em;
+}
+/* line 192, /Users/thomasgalibert/Projects/taxi2/app/assets/stylesheets/styles.css.scss */
+#panel-exposer h3 {
+  font-size: 1.3em;
+}
+
+/* line 197, /Users/thomasgalibert/Projects/taxi2/app/assets/stylesheets/styles.css.scss */
+#venir {
+  text-align: center;
+  position: relative;
+}
+
+/* line 1, /Users/thomasgalibert/Projects/taxi2/app/assets/stylesheets/forms.css.scss */
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 7px 5px;
+}
+
+/* line 6, /Users/thomasgalibert/Projects/taxi2/app/assets/stylesheets/forms.css.scss */
+label.required {
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 1px dotted #333;
+  font-size: 1.2em;
+}
+/* line 11, /Users/thomasgalibert/Projects/taxi2/app/assets/stylesheets/forms.css.scss */
+label.required:after {
+  content: "*";
+}
