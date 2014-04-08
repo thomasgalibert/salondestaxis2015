@@ -70,7 +70,45 @@ hr{
 				color: #fff;
 				line-height: 2.5em;
 				&:hover{
-					border-top: 3px solid #000;
+					
+				}
+			}	
+		}
+	}
+}
+
+#nav-secondary{
+	// Special formating for secondary ban
+	clear: both;
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  // Normal formating
+	background-color: rgba(1,1,1,0.8);
+	text-align: right;
+	#title-logo{
+		position: absolute;
+		left: 10px;
+		top: 0px;
+	}
+	#links{
+		padding: 0;
+		margin: 0;
+		position: relative;
+		li{
+			padding: 0;
+			margin: 0;
+			display: inline;
+			margin-right: 30px;
+			a, a:visited{
+				text-decoration: none;
+				font-size: 1.5em;
+				color: #fff;
+				line-height: 2.5em;
+				&:hover{
+					
 				}
 			}	
 		}
